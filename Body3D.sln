@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Body3D", "Body3D\Body3D.csproj", "{BAAAF1A6-590B-48F6-97E2-CA7E25524207}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAAAF1A6-590B-48F6-97E2-CA7E25524207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAAAF1A6-590B-48F6-97E2-CA7E25524207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAAAF1A6-590B-48F6-97E2-CA7E25524207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAAAF1A6-590B-48F6-97E2-CA7E25524207}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
