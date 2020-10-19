@@ -80,6 +80,18 @@ namespace Body3D
             }
         }
 
+        public double Height {
+            get {
+                double Zx = Z * Math.Cos(Beta);
+                double Yx = Y * Math.Cos(Alpha);
+                double Yy = Y * Math.Sin(Alpha);
+                double Zy = (Z * Y * Math.Cos(Gamma) - Zx * Yx) / Yy;
+                double Cos = Math.Sqrt(Math.Pow(Zx, 2) + Math.Pow(Zy, 2)) / Z;
+                double Sin = Math.Sqrt(1 - Math.Pow(Cos, 2));
+                return Z * Sin;
+            }
+        }
+
         public override double LenghtsOfEdges()
         {
             return 4 * (X + Y + Z);
@@ -92,8 +104,7 @@ namespace Body3D
 
         public override double Volume()
         {
-            //return Math.Abs(X*Y*Z*Math.Cos(Gamma)*Math.Sin())
-            return 0;
+            return Height * X * Y * Math.Sin(Alpha);
         }
 
         public static double ParallelogramSquare(double a, double b, double alpha) {
@@ -102,7 +113,7 @@ namespace Body3D
 
         public override string ToString()
         {
-            return GetType() + " with parameters: " + "\n" +
+            return GetType().Name + " with parameters: " + "\n" +
                 "x: " + X + ", y: " + Y + ", z: " + Z + "\n" +
                 "alpha: " + Alpha + ", beta: " + Beta + ", gamma: " + Gamma;
         }

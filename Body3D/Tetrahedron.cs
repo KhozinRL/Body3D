@@ -130,7 +130,7 @@ namespace Body3D
 
         public override string ToString()
         { 
-            return GetType() + " with parameters: " + "\n" +
+            return GetType().Name + " with parameters: " + "\n" +
                 "x: " + X + ", y: " + Y + ", z: " + Z + "\n" +
                 "alpha: " + Alpha + ", beta: " + Beta + ", gamma: " + Gamma;
         }
