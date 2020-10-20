@@ -104,7 +104,7 @@ namespace Body3D
 
         public override double Volume()
         {
-            return Height * X * Y * Math.Sin(Alpha);
+            return HeightXY * X * Y * Math.Sin(Alpha);
         }
 
         public static double ParallelogramSquare(double a, double b, double alpha) {
