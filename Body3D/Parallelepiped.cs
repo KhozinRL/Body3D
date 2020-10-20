@@ -80,7 +80,7 @@ namespace Body3D
             }
         }
 
-        public double Height {
+        public double HeightXY {
             get {
                 double Zx = Z * Math.Cos(Beta);
                 double Yx = Y * Math.Cos(Alpha);
