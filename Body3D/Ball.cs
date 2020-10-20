@@ -37,7 +37,8 @@ namespace Body3D
 
         public override string ToString()
         {
-            return GetType().Name + " with radius: R = " + Radius;
+
+            return String.Format("{0} with radius: R = {1:0.00}", GetType().Name, Radius);
                 
         }
     }

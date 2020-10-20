@@ -113,9 +113,7 @@ namespace Body3D
 
         public override string ToString()
         {
-            return GetType().Name + " with parameters: " + "\n" +
-                "x: " + X + ", y: " + Y + ", z: " + Z + "\n" +
-                "alpha: " + Alpha + ", beta: " + Beta + ", gamma: " + Gamma;
+            return String.Format("{0} with parameters: \nx: {1:0.00}, y: {2:0.00}, z: {3:0.00} \nalpha: {4:0.00}, beta: {5:0.00}, gamma: {6:0.00}", GetType().Name, X, Y, Z, Alpha, Beta, Gamma);
         }
     }
 }
